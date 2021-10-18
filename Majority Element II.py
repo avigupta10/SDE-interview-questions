@@ -1,3 +1,4 @@
+from collections import Counter
 class Solution(object):
     def majorityElement(self, nums):
         dic = Counter(nums)
@@ -6,3 +7,5 @@ class Solution(object):
             if dic[i] > len(nums)/3:
                 ans.append(i)
         return ans
+
+
